@@ -28,7 +28,7 @@ function run(string $input): string
                 foreach (['red', 'green', 'blue'] as $color) {
                     if (strpos($entry, $color)) {
                         $number = str_replace([$color, ' '], '', $entry);
-                        if ($$color < intval($number)) $$color = $number;
+                        $$color = max($$color, $number);
                     }
                 }
             }
