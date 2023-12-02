@@ -4,9 +4,6 @@ const MAX_RED = 12;
 const MAX_GREEN = 13;
 const MAX_BLUE = 14;
 
-/**
- * @throws Exception
- */
 function run(string $input): string
 {
     $list = file($input);
