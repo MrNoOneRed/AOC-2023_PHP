@@ -1,0 +1,1 @@
+Put your puzzle input here. Name each file 'puzzle[DAY_NUMBER].txt'. Ex. "puzzle1.txt, puzzle22.txt"
