@@ -54,13 +54,5 @@ function run(string $input): string
 
     }
 
-    //$part2 += $part1;
-    print_r($cards);
-//3762400
-    //127939848258
-    //127939870746
-    //1457569
-    //1435081
-    //7013204
     return sprintf("Part1: %d, Part2: %d\n", $part1, $part2);
 }
