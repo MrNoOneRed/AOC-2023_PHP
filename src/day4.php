@@ -27,9 +27,9 @@ function run(string $input): string
         $matches = array_intersect($winning, $numbers);
 
         $points = 0;
-        if($matches) {
+        if ($matches) {
             $points = 1;
-            for($i = 0; $i < count($matches) - 1; $i++) $points += $points;
+            for ($i = 0; $i < count($matches) - 1; $i++) $points += $points;
         }
 
         $part1 += $points;
@@ -38,16 +38,16 @@ function run(string $input): string
     }
 
     // Part 2
-    foreach($cards as $number => &$card) {
+    foreach ($cards as $number => &$card) {
         $part2 += $card['copy'];
 
-        for($a = 0; $a < $card['copy']; $a++) {
-            if($card['matches'] > 0) {
+        for ($a = 0; $a < $card['copy']; $a++) {
+            if ($card['matches'] > 0) {
                 $start = $number + 1;
                 $end = $number + $card['matches'];
 
-                for($i = $start; $i <= $end; $i++) {
-                    if(isset($cards[$i])) $cards[$i]['copy'] += 1;
+                for ($i = $start; $i <= $end; $i++) {
+                    if (isset($cards[$i])) $cards[$i]['copy'] += 1;
                 }
             }
         }
